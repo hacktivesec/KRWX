@@ -1,7 +1,7 @@
 # KRWX: Kernel Read Write Execute
 ## What
 KRWX offers the possibility to call a set of memory-related kernel APIs from user-land through a device driver (`/dev/krwx`) and read/write arbitary memory addresses (without interfering with SMAP/PAN).
-It can be used for educational purposes (in order to study some kernel internals like the memory managament) and to assist the exploitation phase (I developed [this entire exploit](https://1day.dev/notes/Linux-Kernel-n-day-exploit-development) without touching gdb a single time).
+It can be used for educational purposes (in order to study some kernel internals like the memory managament) and to assist the exploitation phase (it has been used to develop the exploit for [CVE-2020-27786](https://blog.hacktivesecurity.com/index.php/2022/06/13/linux-kernel-exploit-development-1day-case-study/) without touching gdb a single time and [CVE-2022-2602](https://blog.hacktivesecurity.com/index.php/2022/12/21/cve-2022-2602-dirtycred-file-exploitation-applied-on-an-io_uring-uaf/)).
 
 It's architecture independent and works with all linux kernels (tested on >=4.9) and devices (Android as well).
 

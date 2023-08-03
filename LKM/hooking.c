@@ -1,9 +1,3 @@
-/*
- *
- * Written by Alessandro Groppo (@kiks)
- *
- */
-
 #define _GFP_USER 0x100cc0
 #define _GFP_KERN 0xcc0
 #define _HOOKED_FUNC_H

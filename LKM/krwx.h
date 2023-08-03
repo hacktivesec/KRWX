@@ -1,10 +1,3 @@
-/*
- *
- * Written by Alessandro Groppo (@kiks)
- *
- */
-
-
 #define DEV_NAME "/dev/krwx"
 #define IOCTL_RW_READ   0xffd4
 #define IOCTL_RW_WRITE  0xffd5

@@ -1,9 +1,3 @@
-/*
- *
- * Written by Alessandro Groppo (@kiks)
- *
- */
-
 #include <stdio.h>
 #include <sys/ioctl.h>
 #include <stdlib.h>
@@ -158,7 +152,6 @@ void print_qword(void* address){
 void read_memory(void* start_address, size_t size){
   // Read from kernel memory and print better, it will be padded to 8 ofc
   void* end_address = start_address + size; // also if not padded to 8 it will be fine in the loop condition
-                                            //printf("[D] [read_memory] start_addres: %p\n[D][read_memory] end_address: %p\n", start_address, end_address);
   while(start_address < end_address){
     print_qword(start_address);
     start_address = start_address + (8 * 2);

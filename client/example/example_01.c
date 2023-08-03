@@ -1,9 +1,3 @@
-/*
- *
- * Written by Alessandro Groppo (@kiks)
- *
- */
-
 #include "./lib/krwx.h"
 
 int main(){
