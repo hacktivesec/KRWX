@@ -101,6 +101,7 @@ int ioctl_kmem_get(struct io_kmem_get* __user user_kmem){
       // Cache found !
       if( put_user(s, &user_kmem->result) )
         return -EFAULT;
+      break;
     }
   }
 
