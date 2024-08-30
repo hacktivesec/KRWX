@@ -24,7 +24,7 @@ These wrappers are implemented in the same way as the kernel calls them. So, you
 #### Custom Functions
 Other than classic wrappers, the library offers more functions that can be useful while exploiting or understanding a specific subject:
 - `kread64(void* address)`/`kwrite64(void* address, uint64_t value)` in order to read and write 8 bytes of kernel memory.
-- `slab_ptr(void* ptr)` returns the cache name of the provided `pointer` (if it's part of one).
+- `slab_ptr(void* ptr)` returns the cache name of the provided `pointer` (if it's part of one). (currently supports only >=5.16 kernels due to [this](https://github.com/kiks7/KRWX/issues/1))
 - `multiple_kmalloc(void** array, uint32_t n_objs, uint32_t size)` and `multiple_kfree(void** array, uint64_t to_free[], uint64_t to_free_size)` respectevly used to allocate and free multiple chunks using `kmalloc`/`kfree`.
 - ` read_memory(void* start_address, size_t size)` read `size` bytes of memory starting from `start_address`.
 - `read_userland_memory(void* start_address, size_t size)` reads userland memory.
